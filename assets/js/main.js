@@ -1,4 +1,4 @@
-// alert('Hello');
+// Fade in swiftly
 document.body.className = 'hidden';
 window.addEventListener('DOMContentLoaded', function () {
 
