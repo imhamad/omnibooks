@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!--    Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Omni Books | Login</title>
+    <title>Omni Books | Recover Username</title>
 
-<!--    Nice Fade in affect-->
+<!--    Nice Fade in effect-->
 </head>
 <body>
 
@@ -26,41 +26,31 @@
         <div class="form-wrapper mx-auto my-auto">
             <a href="index.html"> <img src="assets/images/omnibooks-logo.svg" alt="" class="omnibook__logo"></a>
             <p>
-                Sign In to your account
+                Forgot Username
             </p>
             <form action="" method="" enctype="" class="omnibook__form pe-5 ps-5">
-                <!--                Email -->
+
+
+<!--                FEIN Recover Username -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="fein" name="perPHPvariable" aria-describedby="fein"
+                           placeholder="FEIN" required>
+                </div>
+
+                <!--                Recover Email -->
                 <div class="mb-3">
                     <input type="email" class="form-control" id="email" name="perPHPvariable" aria-describedby="email"
-                           placeholder="Enter Email / User Name" required>
-                    <a href="recover-username.html" class="text-muted text-decoration-none">  <div id="emailHelp" class="form-text pull-right text-right d-flex justify-content-end">Forgot
-                        Email <span class="ms-1 me-1">/</span>
-                        User Name?</div></a>
+                           placeholder="Email" required>
                 </div>
 
-                <!--                password -->
-                <div class="mb-3 mt-1">
-                    <input type="password" class="form-control" id="password" name="perPhpVariable"
-                           aria-describedby="password" placeholder="Password" required>
-                    <div id="passwordHelp" class="form-text pull-right text-right d-flex justify-content-end"><a
-                            href="recover-password.html" class="text-muted text-decoration-none">Forgot Password?</a></div>
-                </div>
-                <!--Remember my Preference -->
-
-                <div class="mb-3 form-check mt-0">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember my preference</label>
-                </div>
 
                 <!--                Sign in button -->
 
-                <button type="submit" class="btn btn-success w-50 pt-2 pb-2 justify-content-center d-flex mx-auto mt-4">
-                    Sign In
+                <button type="submit" class="btn btn-success w-50 pt-2 pb-2 justify-content-center d-flex mx-auto mt-4" name="signup">
+                   PROCESS
                 </button>
                 <!--Sign up -->
-                <div id="signUp" class="form-text d-flex justify-content-start signup">Don't have an account?<a href="sign-up.html"
-                                                                                                                class="text-decoration-none ps-1">Sign
-                    Up</a></div>
+   
                 <div class="deverand-line mb-5 pb-5"></div>
             </form>
         </div>
@@ -99,7 +89,7 @@
     <div class="copyright">
         <div class="container">
             <div class="text-center text-dark mx-auto pt-2 pb-2">
-                Copyright 2022. All rights reserved
+                Copyright 2022 All rights reserved
             </div>
         </div>
     </div>

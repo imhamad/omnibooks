@@ -1,4 +1,9 @@
 // Media Queries
+@mixin super-xxl(){
+  @media screen and (min-width: $super-xxl) {
+    @content;
+  }
+}
 @mixin xxl-screen() {
   @media only screen and (max-width: $xxl-screen) {
     @content;

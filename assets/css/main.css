@@ -1,11 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1;
+  transition: opacity 1.5s ease-out; }
+
 body {
-  background-color: floralwhite;
-  display: flex;
-  display: table;
-  display: grid;
-  display: block; }
+  background-color: white; }
+
+.wrapper {
+  min-height: 75vh;
+  margin-top: 9vh; }
+  .wrapper .form-wrapper {
+    max-width: 600px;
+    display: block;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 14px 30px -3px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 3rem;
+    transition: all .5s ease-in-out; }
+    .wrapper .form-wrapper:hover {
+      box-shadow: 14px 19px 40px -5px rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 768px) {
+      .wrapper .form-wrapper {
+        padding: 2rem 1.5rem; } }
+    @media only screen and (max-width: 385px) {
+      .wrapper .form-wrapper {
+        padding: 1.5rem 1rem; } }
+    .wrapper .form-wrapper img {
+      width: 240px;
+      display: block;
+      justify-content: center;
+      margin: auto; }
+    .wrapper .form-wrapper p {
+      text-align: center;
+      margin: auto;
+      padding-top: .6em;
+      padding-bottom: 1.2rem;
+      color: #4F4141;
+      font-size: 18px; }
+    .wrapper .form-wrapper form .form-control {
+      padding: .575rem .75rem; }
+      .wrapper .form-wrapper form .form-control::placeholder {
+        color: #C3C3C3; }
+    .wrapper .form-wrapper form .form-text {
+      font-size: 15px;
+      line-height: 1.8rem;
+      font-weight: 400; }
+    .wrapper .form-wrapper form .form-check-input:checked {
+      background-color: green;
+      border: darkgreen; }
+    .wrapper .form-wrapper form .form-check-label {
+      color: #4F4141; }
+    .wrapper .form-wrapper form .btn {
+      background: #008037;
+      border: darkgreen;
+      font-size: 1rem; }
+    .wrapper .form-wrapper form .signup {
+      margin-top: 1rem;
+      color: #4F4141;
+      font-size: 1rem; }
+      .wrapper .form-wrapper form .signup a {
+        color: #6292D9;
+        font-size: 1rem; }
+    @media only screen and (max-width: 768px) {
+      .wrapper .form-wrapper form {
+        padding-left: .75rem !important;
+        padding-right: .85rem !important; } }
+
+@media screen and (min-width: 1720px) {
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0; } }
+
+@media only screen and (max-width: 768px) {
+  footer .sm__column {
+    display: block !important;
+    margin: auto;
+    text-align: center;
+    margin: 1rem auto; }
+  footer .sm__left {
+    margin-right: .5rem;
+    padding-top: 1rem;
+    font-size: 14px; }
+  footer .sm__right {
+    margin-left: .5rem;
+    padding-top: 1rem;
+    font-size: 14px; } }
+
+footer .footer__omnibooks {
+  background: #008037; }
+  footer .footer__omnibooks img {
+    width: 225px; }
+  footer .footer__omnibooks .icon {
+    width: 25px;
+    height: 25px; }
+
+@media only screen and (max-width: 768px) {
+  footer.fixed-bottom {
+    position: relative !important; } }

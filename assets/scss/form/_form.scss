@@ -1,0 +1,144 @@
+.wrapper {
+  min-height: 75vh;
+  margin-top: 9vh;
+
+  .form-wrapper {
+    max-width: 600px;
+    display: block;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 14px 30px -3px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 3rem;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      box-shadow: 14px 19px 40px -5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    @include md-screen {
+      & {
+        padding: 2rem 1.5rem;
+      }
+    }
+    @include xs-screen {
+      & {
+        padding: 1.5rem 1rem;
+      }
+    }
+
+    img {
+      width: 240px;
+      display: block;
+      justify-content: center;
+      margin: auto;
+    }
+
+    p {
+      text-align: center;
+      margin: auto;
+      padding-top: .6em;
+      padding-bottom: 1.2rem;
+      color: $text-color;
+      font-size: $font-medium;
+    }
+
+    form {
+      .form-control {
+        padding: .575rem .75rem;
+
+        &::placeholder {
+          color: #C3C3C3;
+        }
+      }
+
+      .form-text {
+        font-size: $font-base;
+        line-height: 1.8rem;
+        font-weight: $normal;
+      }
+
+      .form-check-input:checked {
+        background-color: green;
+        border: darkgreen;
+      }
+
+      .form-check-label {
+        color: $text-color;
+      }
+
+      .btn {
+        background: $green;
+        border: darkgreen;
+        font-size: $font-text;
+      }
+
+      .signup {
+        margin-top: 1rem;
+        color: $text-color;
+        font-size: $font-text;
+
+        a {
+          color: $blue;
+          font-size: $font-text;
+        }
+      }
+
+      @include md-screen {
+        & {
+          padding-left: .75rem !important;
+          padding-right: .85rem !important;
+        }
+      }
+    }
+  }
+}
+
+//footer
+footer {
+  @include super-xxl {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+  }
+  @include md-screen {
+    .sm__column {
+      display: block !important;
+      margin: auto;
+      text-align: center;
+      margin: 1rem auto;
+
+    }
+    .sm__left {
+      margin-right: .5rem;
+      padding-top: 1rem;
+      font-size: $font-mobile;
+    }
+    .sm__right {
+      margin-left: .5rem;
+      padding-top: 1rem;
+      font-size: $font-mobile;
+    }
+
+  }
+
+  .footer__omnibooks {
+    background: $green;
+
+
+    img {
+      width: 225px;
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  @include md-screen {
+    &.fixed-bottom {
+      position: relative !important;
+    }
+  }
+}

@@ -1,18 +1,28 @@
 // Colors
-$text-color: #474747;
+$text-color: #4F4141;
 $black: #2b2b2b;
-$yellow: #ffb800;
+$green: #008037;
+$blue: #6292D9;
 
 // Font sizes
-$font-base: 14px;
-$font-nav: 17px;
+$font-base: 15px;
+$font-text: 1rem;
+$font-mobile: 14px;
+$font-medium: 18px;
 $font-heading1: 42px;
 $font-heading3: 36px;
 
+// Font Weight
+
+$normal: 400;
+$bold: 600;
+
+
 // Screen Sizes
+$super-xxl: 1720px;
 $xxl-screen: 1400px;
 $xl-screen: 1200px;
 $lg-screen: 992px;
 $md-screen: 768px;
 $sm-screen: 576px;
-$xs-screen: 350px;
+$xs-screen: 385px;
